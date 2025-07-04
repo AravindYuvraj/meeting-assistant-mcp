@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "id": "user_1",
+      "name": "Alice Johnson",
+      "email": "alice@company.com",
+      "timezone": "America/New_York",
+      "work_hours": {
+        "monday": ["09:00", "17:00"],
+        "tuesday": ["09:00", "17:00"],
+        "wednesday": ["09:00", "17:00"],
+        "thursday": ["09:00", "17:00"],
+        "friday": ["09:00", "17:00"]
+      },
+      "preferences": {
+        "max_meetings_per_day": 6,
+        "preferred_meeting_length": 30,
+        "no_meeting_times": ["12:00-13:00"],
+        "preferred_times": "10:00"
+      }
+    },
+    {
+      "id": "user_2",
+      "name": "Bob Smith",
+      "email": "bob@company.com",
+      "timezone": "Europe/London",
+      "work_hours": {
+        "monday": ["08:00", "16:00"],
+        "tuesday": ["08:00", "16:00"],
+        "wednesday": ["08:00", "16:00"],
+        "thursday": ["08:00", "16:00"],
+        "friday": ["08:00", "16:00"]
+      },
+      "preferences": {
+        "max_meetings_per_day": 5,
+        "preferred_meeting_length": 45,
+        "no_meeting_times": ["11:30-12:30"]
+      }
+    },
+    {
+      "id": "user_3",
+      "name": "Carol Davis",
+      "email": "carol@company.com",
+      "timezone": "Asia/Tokyo",
+      "work_hours": {
+        "monday": ["09:00", "18:00"],
+        "tuesday": ["09:00", "18:00"],
+        "wednesday": ["09:00", "18:00"],
+        "thursday": ["09:00", "18:00"],
+        "friday": ["09:00", "18:00"]
+      },
+      "preferences": {
+        "max_meetings_per_day": 4,
+        "preferred_meeting_length": 60,
+        "no_meeting_times": ["12:00-13:00"]
+      }
+    }
+  ],
+  "meeting_templates": {
+    "standup": [
+      "What did you accomplish yesterday?",
+      "What are you working on today?",
+      "Any blockers or challenges?",
+      "Team updates and announcements"
+    ],
+    "review": [
+      "Review previous action items",
+      "Discuss project progress",
+      "Identify risks and issues",
+      "Plan next steps",
+      "Assign action items"
+    ],
+    "planning": [
+      "Define project scope and objectives",
+      "Identify key deliverables",
+      "Estimate timelines and resources",
+      "Assign responsibilities",
+      "Set milestones and checkpoints"
+    ],
+    "brainstorm": [
+      "Problem statement review",
+      "Idea generation session",
+      "Evaluate and prioritize ideas",
+      "Action plan development",
+      "Next steps and ownership"
+    ],
+    "one_on_one": [
+      "Performance and goal review",
+      "Current project discussion",
+      "Career development topics",
+      "Feedback and concerns",
+      "Action items and follow-ups"
+    ]
+  },
+  "sample_meetings": [
+    {
+      "id": "meeting_1",
+      "title": "Daily Standup #1",
+      "participants": ["user_1", "user_2", "user_3"],
+      "start_time": "2024-12-01T10:00:00Z",
+      "end_time": "2024-12-01T10:15:00Z",
+      "timezone": "UTC",
+      "organizer": "user_1",
+      "agenda": [
+        "What did you accomplish yesterday?",
+        "What are you working on today?",
+        "Any blockers or challenges?"
+      ],
+      "meeting_type": "standup",
+      "recurring": true,
+      "effectiveness_score": 4.2
+    },
+    {
+      "id": "meeting_2",
+      "title": "Sprint Planning #1",
+      "participants": ["user_1", "user_2", "user_3", "user_4"],
+      "start_time": "2024-12-01T14:00:00Z",
+      "end_time": "2024-12-01T16:00:00Z",
+      "timezone": "UTC",
+      "organizer": "user_2",
+      "agenda": [
+        "Define project scope and objectives",
+        "Identify key deliverables",
+        "Estimate timelines and resources",
+        "Assign responsibilities"
+      ],
+      "meeting_type": "planning",
+      "recurring": false,
+      "effectiveness_score": 3.8
+    },
+    {
+      "id": "meeting_3",
+      "title": "1:1 Check-in",
+      "participants": ["user_1", "user_2"],
+      "start_time": "2024-12-02T15:00:00Z",
+      "end_time": "2024-12-02T15:30:00Z",
+      "timezone": "UTC",
+      "organizer": "user_1",
+      "agenda": [
+        "Performance and goal review",
+        "Current project discussion",
+        "Career development topics"
+      ],
+      "meeting_type": "one_on_one",
+      "recurring": true,
+      "effectiveness_score": 4.5
+    }
+  ]
+}
